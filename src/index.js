@@ -1,4 +1,5 @@
 import AppUi from './ui/AppUi';
+import getCity from './forecast';
 
 const app = new AppUi();
 
@@ -8,5 +9,4 @@ const render = function render() {
 };
 
 render();
-
-console.log(app);
+getCity('Beogrqad');
