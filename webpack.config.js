@@ -1,7 +1,8 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['regenerator-runtime/runtime.js', './src/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
     filename: 'bundle.js',
