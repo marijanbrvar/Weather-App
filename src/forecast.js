@@ -1,5 +1,5 @@
 export async function getWeather(id) {
-  const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+  const base = 'https://dataservice.accuweather.com/currentconditions/v1/';
   const query = `${id}?apikey=${process.env.API_KEY}`;
 
   const response = await fetch(base + query);
@@ -8,7 +8,7 @@ export async function getWeather(id) {
 }
 
 export async function getCity(city) {
-  const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+  const base = 'https://dataservice.accuweather.com/locations/v1/cities/search';
   const query = `?apikey=${process.env.API_KEY}&q=${city}`;
 
   const response = await fetch(base + query);
