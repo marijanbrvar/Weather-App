@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Another Weather App
 
-> One paragraph statement about the project.
+> In this
 
 ![screenshot](./app_screenshot.png)
 
