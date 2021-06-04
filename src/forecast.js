@@ -1,14 +1,19 @@
-const key = '';
+export async function getWeather(id) {
+  const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+  const query = `${id}?apikey=${process.env.API_KEY}`;
 
-export default async function getCity(city) {
+  const response = await fetch(base + query);
+  const data = response.json();
+  return data;
+}
+
+export async function getCity(city) {
   const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
-  const query = `?apikey=${key}&q=${city}`;
+  const query = `?apikey=${process.env.API_KEY}&q=${city}`;
 
   const response = await fetch(base + query);
 
   const data = await response.json();
 
-  console.log(data);
+  return data[0];
 }
-
-// getCity('Beograd');
