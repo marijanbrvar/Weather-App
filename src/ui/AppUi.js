@@ -10,7 +10,7 @@ export default class AppUi {
     this.location = document.createElement('form');
     this.location.classList.add('change-location', 'my-4', 'text-center', 'text-muted');
     this.forecast = document.createElement('div');
-    this.forecast.classList.add('card', 'rounded');
+    this.forecast.classList.add('card', 'rounded', 'd-none');
     this.container.append(this.header, this.location, this.forecast);
   }
 
@@ -34,6 +34,10 @@ export default class AppUi {
 
     this.icon = document.createElement('div');
     this.icon.classList.add('icon', 'bg-light', 'mx-auto', 'text-center');
+    this.iconimg = document.createElement('img');
+    this.iconimg.src = 'https://via.placeholder.com/64x64';
+
+    this.icon.append(this.iconimg);
 
     this.forecastContent = document.createElement('div');
     this.forecastContent.classList.add('text-muted', 'text-uppercase', 'text-center', 'details');
@@ -41,18 +45,19 @@ export default class AppUi {
     this.cityName.classList.add('my-3');
     this.cityName.innerText = 'City name';
     this.weatherCondition = document.createElement('div');
-    this.weatherCondition.classList.add('my-3');
+    this.weatherCondition.classList.add('my-3', 'condition');
     this.weatherCondition.innerText = 'Wather condition';
 
     this.temperature = document.createElement('div');
     this.temperature.classList.add('my-4', 'display-4');
     this.mark = document.createElement('span');
     this.mark.innerText = 'temp';
+    this.mark.id = 'temp';
     this.sign = document.createElement('span');
     this.sign.innerHTML = '&deg;C';
 
     this.temperature.append(this.mark, this.sign);
-    this.forecastContent.append(this.cityName, this.weatherCondition, this.temperature);
+    this.forecastContent.append(this.icon, this.cityName, this.weatherCondition, this.temperature);
     this.forecast.append(this.image, this.forecastContent);
   }
 }
