@@ -1,44 +1,43 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Another Weather App
 
-> One paragraph statement about the project.
+> This simple Weather app demonstrates how to use JavaScript to handle asynchronous functions by integrating third-party service, such as AccuWeather weather APIs.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+The project was build using vanilla JavaScript by applying the JS approach of Promises.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- Webpack bundler
+- AccuWeather API service for location weather forecast
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://marijanbrvar.github.io/Weather-App/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**Click at the above link "Live demo." After the application opens, please type the city's name in the current weather situation, e.g., Belgrade. Depending on the time zone of the selected city application, it will render different visuals to show whether it is day or night time. Right below the primary visual, there is also an icon representing current weather and a textual description.**
 
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 ### Prerequisites
+Locally installed Node and NPM
+To acquire an API key from AccuWeather, you must register a developer account and create a new application. Under the newly registered app, you can find An API key.
+Create ".env" file in the root directory and enter the new key
+`API_KEY=[api key from AccuWeather app].`
 
 ### Setup
-
-### Install
-
+`git clone git@github.com:marijanbrvar/Weather-App.git && cd Weather-App.`
+Run `npm install` to download dependencies.
+Execute shell command `npm run start` to run the application locally on your computer.
 ### Usage
-
-### Run tests
-
-### Deployment
-
+Wen application is opened in your web browser, TYpe city name in the input field, and the result will show below the input field.
 
 ## Authors
 
@@ -54,7 +53,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/marijanbrvar/Weather-App/issues).
 
 ## Show your support
 
@@ -62,10 +61,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Icons and visual are acquired from Adam Whitcroft at (https://thenounproject.com/adamwhitcroft/collection/climacons/)
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://github.com/marijanbrvar/Weather-App/blob/Feature/LICENSE) licensed.
