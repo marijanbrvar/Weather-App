@@ -21,7 +21,7 @@ The project was build using vanilla JavaScript by applying the JS approach of Pr
 
 ## Getting Started
 
-**Click at the above link "Live demo." After the application opens, please type the city's name in the current weather situation, e.g., Belgrade. Depending on the time zone of the selected city application, it will render different visuals to show whether it is day or night time. Right belove the primary visual, there is also an icon representing current weather and a textual description.**
+**Click at the above link "Live demo." After the application opens, please type the city's name in the current weather situation, e.g., Belgrade. Depending on the time zone of the selected city application, it will render different visuals to show whether it is day or night time. Right below the primary visual, there is also an icon representing current weather and a textual description.**
 
 
 To get a local copy up and running, follow these simple example steps.
@@ -33,11 +33,11 @@ Create ".env" file in the root directory and enter the new key
 `API_KEY=[api key from AccuWeather app].`
 
 ### Setup
-`git clone git@github.com:marijanbrvar/Weather-App.git && cd Weather-App`
+`git clone git@github.com:marijanbrvar/Weather-App.git && cd Weather-App.`
 Run `npm install` to download dependencies.
 Execute shell command `npm run start` to run the application locally on your computer.
 ### Usage
-Wen application is opened in your web browser, TYpe city name in the input field and the result will show belove input field
+Wen application is opened in your web browser, TYpe city name in the input field, and the result will show below the input field.
 
 ## Authors
 
